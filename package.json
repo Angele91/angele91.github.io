@@ -9,8 +9,8 @@
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc",
-    "predeploy": "pnpm build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "pnpm build && cp -r build docs",
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@remix-run/node": "^2.15.3",
