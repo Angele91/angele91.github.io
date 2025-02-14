@@ -10,7 +10,7 @@ export function ContactLinks() {
         Contact
       </a>
       <a
-        href="https://docs.google.com/document/d/1MrjKltPI1H4obKGWQikhAjrJQvhyG_f6nHHfZRH_8m4/edit?usp=sharing"
+        href="https://docs.google.com/document/d/1QrWhQ3DLzPMxnWK9HaBBhYgthsTR7JlkloShpsKabM4/edit?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="text-white text-xl font-thin underline"
