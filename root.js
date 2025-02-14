@@ -1,4 +1,4 @@
-import{r as i,j as t}from"./jsx-runtime-BWtM72Fx.js";import{l as f,n as d,o as y,p as x,_ as g,O as S,M as j,L as w,S as k}from"./components-CjhcRaMF.js";/**
+import{r as i,j as t}from"./jsx-runtime.js";import{l as f,n as d,o as y,p as x,_ as g,O as S,M as j,L as w,S as k}from"./components.js";/**
  * @remix-run/react v2.15.3
  *
  * Copyright (c) Remix Software Inc.
