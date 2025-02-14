@@ -4,12 +4,19 @@ export function ContactLinks() {
       <a
         href="mailto:angele.gm91@gmail.com"
         className="text-blue-500 text-xl font-thin underline"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         Contact
       </a>
-      <a href="/cv.pdf" className="text-white text-xl font-thin underline">
-        Download CV
+      <a
+        href="https://docs.google.com/document/d/1MrjKltPI1H4obKGWQikhAjrJQvhyG_f6nHHfZRH_8m4/edit?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white text-xl font-thin underline"
+      >
+        CV
       </a>
     </div>
   );
-} 
+}
