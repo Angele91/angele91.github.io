@@ -4,7 +4,8 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix vite:build && cp -r build/client/* docs",
+    "build": "remix vite:build",
+    "postbuild": "rm -rf docs && mkdir docs && cp -r build/client/* docs",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",

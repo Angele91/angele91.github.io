@@ -23,6 +23,15 @@ export default defineConfig({
     tsconfigPaths(),
   ],
   build: {
-    outDir: 'docs'
+    outDir: 'docs',
+    emptyOutDir: true,
+    assetsDir: '',
+    rollupOptions: {
+     output: {
+      entryFileNames: '[name].js',
+      chunkFileNames: '[name].js',
+      assetFileNames: '[name].[ext]',
+     },
+    }
   },
 });
