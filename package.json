@@ -6,7 +6,7 @@
   "scripts": {
     "build": "remix vite:build",
     "predeploy": "pnpm build",
-    "deploy": "npx gh-pages -d build/client --dotfiles --nojekyll",
+    "deploy-page": "npx gh-pages -d build/client --dotfiles --nojekyll",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
