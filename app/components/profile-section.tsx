@@ -2,6 +2,7 @@ import { ContactInfo } from "./contact-info";
 import { DecorativeDivider } from "./shared/decorative-divider";
 import { ContactLinks } from "./skills/contact-links";
 import { SkillsInfo } from "./skills/skills-info";
+import { motion } from "framer-motion";
 
 export function ProfileSection() {
   return (
@@ -12,7 +13,26 @@ export function ProfileSection() {
             <h1 className="text-white text-3xl w-full tracking-[0.06em] text-[48px] font-light leading-[1.2]">
               <span className="font-normal">Hello,</span> I&apos;m
               <br />
-              <span className="font-semibold">Angel Gonzalez.</span>
+              <motion.span 
+                className="font-semibold relative"
+                animate={{
+                  backgroundPosition: ["0%", "100%", "0%"],
+                }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                style={{
+                  backgroundImage: "linear-gradient(to right, rgb(129 140 248), rgb(99 102 241), rgb(129 140 248))",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  backgroundSize: "200% 100%",
+                }}
+              >
+                Angel Gonzalez.
+              </motion.span>
             </h1>
             <ContactInfo />
           </div>

@@ -245,14 +245,14 @@ export function BackgroundPattern() {
         variants={itemVariants}
         className="absolute left-1/3 top-1/2 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl"
         animate={{
-          scale: 1.2
+          scale: [1, 1.5, 1],
+          opacity: [0.1, 0.3, 0.1]
         }}
         transition={{
-          duration: 2,
+          duration: 4,
           repeat: Infinity,
-          repeatType: "reverse",
           ease: "easeInOut",
-          delay: 1.3
+          times: [0, 0.5, 1]
         }}
         aria-hidden="true"
       />
