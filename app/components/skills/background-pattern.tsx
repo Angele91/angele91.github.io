@@ -39,7 +39,7 @@ const itemVariants = {
 export function BackgroundPattern() {
   return (
     <motion.div 
-      className="absolute inset-0 overflow-hidden pointer-events-none"
+      className="absolute top-0 inset-x-0 h-screen overflow-hidden pointer-events-none"
       variants={containerVariants}
       initial="initial"
       animate="animate"
