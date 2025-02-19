@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "predeploy-page": "rm -rf build && pnpm build && git commit -m 'Update build' && git subtree push --prefix build/client origin gh-pages --force",
+    "predeploy-page": "pnpm build",
     "deploy-page": "npx gh-pages -d build/client --dotfiles --nojekyll",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
