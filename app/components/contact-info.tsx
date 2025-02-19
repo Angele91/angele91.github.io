@@ -9,7 +9,7 @@ export function ContactInfo() {
         <HiOutlineMail className="text-gray-300 text-2xl" />
         <a
           href="mailto:angel@angelgonzalez.dev"
-          className="text-gray-300 text-lg underline"
+          className="text-gray-300 text-lg font-light hover:text-gray-100 transition-colors underline"
           target="_blank"
           rel="noreferrer"
         >
@@ -20,7 +20,7 @@ export function ContactInfo() {
         <FaLinkedin className="text-blue-300 text-2xl" />
         <a
           href="https://www.linkedin.com/in/angel-gonz%C3%A1lez-9b58681b2/"
-          className="text-blue-300 text-lg underline"
+          className="text-blue-300 text-lg font-light hover:text-blue-100 transition-colors underline"
           target="_blank"
           rel="noreferrer"
         >
@@ -31,7 +31,7 @@ export function ContactInfo() {
         <FaGithub className="text-white text-2xl" />
         <a
           href="https://github.com/Angele91"
-          className="text-white text-lg underline"
+          className="text-white text-lg font-light hover:text-gray-100 transition-colors underline"
           target="_blank"
           rel="noreferrer"
         >

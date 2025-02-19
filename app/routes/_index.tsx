@@ -17,11 +17,12 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="bg-[#BFBFBD] lg:h-screen lg:w-screen flex items-center justify-center lg:py-16 lg:px-20 py-10 px-5">
-      <div className="flex flex-col lg:flex-row w-full h-full [filter:drop-shadow(15px_15px_10px_rgba(3,3,3,0.6))_drop-shadow(0px_5px_15px_rgba(3,3,3,0.3))] max-w-[1280px]">
+    <main className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-gray-950 via-indigo-950/90 to-gray-950 flex items-center justify-center">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(59,130,246,0.04),transparent_40%),radial-gradient(circle_at_70%_20%,rgba(99,102,241,0.03),transparent_45%)]" />
+      <div className="relative flex flex-col lg:flex-row w-full h-full shadow-lg rounded-xl max-w-[1280px]">
         <ProfileSection />
         <SkillsSection />
       </div>
-    </div>
+    </main>
   );
 }

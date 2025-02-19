@@ -1,31 +1,66 @@
 import { SkillCard } from "../skill-card";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiNestjs, SiPostgresql, SiAmazon, SiTypescript, SiReact, SiTailwindcss, SiNodedotjs } from "react-icons/si";
 
 export function TechStack() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-6 px-1">
       <div className="flex flex-col gap-2">
-        <span className="text-gray-300 text-lg text-center">
-          My current tech stack
-        </span>
+        <h2 
+          className="text-white text-xl xl:text-2xl font-semibold tracking-wide text-center [text-shadow:0_0_10px_rgba(255,255,255,0.1)]"
+          id="tech-stack-heading"
+        >
+          My Current Tech Stack
+        </h2>
+        <p className="text-gray-200 text-sm xl:text-base font-light text-center">
+          Technologies I work with on a daily basis
+        </p>
       </div>
-      <div className="flex justify-between items-center w-full xl:px-20 md:px-10 flex-wrap">
+
+      <div 
+        className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 w-full place-items-center"
+        role="list"
+        aria-labelledby="tech-stack-heading"
+      >
         <SkillCard
-          iconSrc="/nextjs-icon.svg"
-          iconAlt="nextjs-icon"
+          icon={<TbBrandNextjs className="w-full h-full" />}
           name="Next.JS"
           experience="+6yrs"
         />
         <SkillCard
-          iconSrc="/nestjs-icon.svg"
-          iconAlt="nestjs-icon"
+          icon={<SiNestjs className="w-full h-full" />}
           name="Nest.JS"
           experience="+3yrs"
         />
         <SkillCard
-          iconSrc="/postgresql-icon.svg"
-          iconAlt="postgresql-icon"
+          icon={<SiPostgresql className="w-full h-full" />}
           name="PostgreSQL"
           experience="+5yrs"
+        />
+        <SkillCard
+          icon={<SiAmazon className="w-full h-full" />}
+          name="AWS"
+          experience="+4yrs"
+        />
+        <SkillCard
+          icon={<SiTypescript className="w-full h-full" />}
+          name="TypeScript"
+          experience="+5yrs"
+        />
+        <SkillCard
+          icon={<SiReact className="w-full h-full" />}
+          name="React"
+          experience="+6yrs"
+        />
+        <SkillCard
+          icon={<SiTailwindcss className="w-full h-full" />}
+          name="Tailwind"
+          experience="+3yrs"
+        />
+        <SkillCard
+          icon={<SiNodedotjs className="w-full h-full" />}
+          name="Node.js"
+          experience="+7yrs"
         />
       </div>
     </div>
