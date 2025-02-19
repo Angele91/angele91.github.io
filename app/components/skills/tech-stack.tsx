@@ -25,7 +25,7 @@ export function TechStack() {
         <SkillCard
           icon={<TbBrandNextjs className="w-full h-full" />}
           name="Next.JS"
-          experience="+6yrs"
+          experience="+3yrs"
         />
         <SkillCard
           icon={<SiNestjs className="w-full h-full" />}
@@ -40,12 +40,12 @@ export function TechStack() {
         <SkillCard
           icon={<SiAmazon className="w-full h-full" />}
           name="AWS"
-          experience="+4yrs"
+          experience="+2yrs"
         />
         <SkillCard
           icon={<SiTypescript className="w-full h-full" />}
           name="TypeScript"
-          experience="+5yrs"
+          experience="+4yrs"
         />
         <SkillCard
           icon={<SiReact className="w-full h-full" />}
@@ -60,7 +60,7 @@ export function TechStack() {
         <SkillCard
           icon={<SiNodedotjs className="w-full h-full" />}
           name="Node.js"
-          experience="+7yrs"
+          experience="+4yrs"
         />
       </div>
     </div>
