@@ -9,7 +9,7 @@ export interface SkillCardProps {
 export function SkillCard({ icon, name, experience }: SkillCardProps) {
   return (
     <div 
-      className="group flex flex-col items-center justify-between w-full max-w-[160px] aspect-square p-6 rounded-xl bg-indigo-950/10 hover:bg-indigo-900/20 transition-all duration-300 backdrop-blur-sm border border-indigo-500/10 hover:border-indigo-500/20"
+      className="group flex flex-col gap-1 items-center justify-between w-full max-w-[160px] aspect-square p-6 rounded-xl bg-indigo-950/10 hover:bg-indigo-900/20 transition-all duration-300 backdrop-blur-sm border border-indigo-500/10 hover:border-indigo-500/20"
       role="listitem"
       aria-label={`${name} - ${experience} of experience`}
     >

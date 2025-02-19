@@ -1,6 +1,6 @@
 export function SkillsInfo() {
   return (
-    <div className="flex border-y border-y-indigo-900/30 gap-6 py-6 px-1 flex-col lg:flex-row backdrop-blur-sm bg-indigo-950/10">
+    <div className="flex border-y-indigo-900/30 gap-6 py-6 px-1 flex-col lg:flex-row backdrop-blur-sm h-full">
       <div className="flex-1 flex flex-col gap-4">
         <h4 className="text-white text-xl xl:text-2xl font-semibold tracking-wide [text-shadow:0_0_10px_rgba(255,255,255,0.1)]">What I Bring to Your Team</h4>
         <span className="text-gray-200 text-sm xl:text-base font-light">
